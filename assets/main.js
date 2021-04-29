@@ -71,7 +71,8 @@ function search(nameKey, myArray) {
 }
 
 function searchByName(nameKey) {
-  const items = Pelements.filter((item) => item.name.indexOf(nameKey) !== -1);
+  let Strr = nameKey.toUpperCase();
+  const items = Pelements.filter((item) => item.name.indexOf(Strr) !== -1);
   if (items.length > 0) {
     return items;
   } else {
